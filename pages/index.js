@@ -15,9 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get(
-        "https://api-covid19.vryh.me/all/"
-      );
+      const response = await axios.get("https://api-covid19.vryh.me/all/");
 
       const data = response.data;
 
@@ -352,6 +350,7 @@ const Home = () => {
                         <a
                           href="https://covid19.ddc.moph.go.th"
                           target="_blank"
+                          rel="noreferrer"
                           className={styles.textMain}
                         >
                           https://covid19.ddc.moph.go.th
